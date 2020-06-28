@@ -1,6 +1,6 @@
 const http = require("http");
 
-const Default = require("../default");
+const Default = require("./default");
 const Router = require("./Router");
 
 Router.append(Default);

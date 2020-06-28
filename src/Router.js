@@ -28,9 +28,7 @@ class Router {
      * @param {Object} res response object
      */
     check(reqUrl, req, res) {
-        console.log("req Url", reqUrl);
         const urlFragment = reqUrl.replace(/^\//, "");
-        // Get request, loop through all available routes, find corresponding route in array, run handler with request and response object
         for (let route of this._routes) {
             const strippedPath = route.path.replace(/^\//, "");
             if (urlFragment === strippedPath) {
