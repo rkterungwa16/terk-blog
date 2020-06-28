@@ -19,6 +19,8 @@ class Router {
             path,
             handler,
         });
+
+        return this;
     }
 
     /**
@@ -31,7 +33,8 @@ class Router {
         const urlFragment = reqUrl.replace(/^\//, "");
         for (let route of this._routes) {
             const strippedPath = route.path.replace(/^\//, "");
-            if (urlFragment === strippedPath) {
+            const hasRegisteredPath = urlFragment.search(strippedPath);
+            if (hasRegisteredPath > -1) {
                 route.handler.apply({}, [req, res]);
             }
         }

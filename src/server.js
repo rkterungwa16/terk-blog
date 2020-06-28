@@ -1,9 +1,12 @@
 const http = require("http");
 
 const Default = require("./default");
+const Assets = require("./assets/assets");
 const Router = require("./Router");
 
-Router.append(Default);
+Router
+    .append("static", Assets)
+    .append(Default);
 
 http.createServer((req, res) => {
     Router.check(req.url, req, res);
