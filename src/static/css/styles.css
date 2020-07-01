@@ -5,3 +5,26 @@ html, body {
 body {
     background-color: #fff;
 }
+
+.container {
+    color: #000;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    zoom: 1;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    border-bottom: 3px solid #000;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80rem;
+    width: 90%;
+}
