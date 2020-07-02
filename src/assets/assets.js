@@ -4,6 +4,7 @@ const contentType = require("./mimetypes");
 const files = {};
 
 const serve = (file, res) => {
+    // res.setHeader('Access-Control-Allow-Origin', '*');
     res.writeHead(200, { "Content-Type": contentType(file.ext.toLowerCase()) });
     res.end(file.content);
 };
@@ -14,7 +15,7 @@ const sendError = (message, code, res) => {
 };
 
 module.exports = async function (req, res) {
-
+    console.log('req.url -->>', req.url);
     const filePath = path.join(__dirname, "..", req.url);
     if (files[filePath]) {
         serve(files[filePath], res);

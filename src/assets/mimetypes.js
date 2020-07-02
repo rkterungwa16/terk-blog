@@ -30,6 +30,14 @@ const mimeTypes = [
     {
         ext: "png",
         contentType: "image/png"
+    },
+    {
+        ext: "ttf",
+        contentType: "font/ttf"
+    },
+    {
+        ext: "woff2",
+        contentType: "font/woff2"
     }
 ];
 /**
