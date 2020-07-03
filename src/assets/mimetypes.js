@@ -1,44 +1,44 @@
 const mimeTypes = [
     {
         ext: "css",
-        contentType: "text/css"
+        contentType: "text/css",
     },
     {
         ext: "html",
-        contentType: "text/html"
+        contentType: "text/html",
     },
     {
         ext: "js",
-        contentType: "application/javascript"
+        contentType: "application/javascript",
     },
     {
         ext: "ico",
-        contentType: "image/ico"
+        contentType: "image/ico",
     },
     {
         ext: "json",
-        contentType: "application/json"
+        contentType: "application/json",
     },
     {
         ext: "jgp",
-        contentType: "image/jpeg"
+        contentType: "image/jpeg",
     },
     {
         ext: "jpeg",
-        contentType: "image/jpeg"
+        contentType: "image/jpeg",
     },
     {
         ext: "png",
-        contentType: "image/png"
+        contentType: "image/png",
     },
     {
         ext: "ttf",
-        contentType: "font/ttf"
+        contentType: "font/ttf",
     },
     {
         ext: "woff2",
-        contentType: "font/woff2"
-    }
+        contentType: "font/woff2",
+    },
 ];
 /**
  *
@@ -53,6 +53,6 @@ const contentType = (ext) => {
         return hasFileType.contentType;
     }
     return "text/plain";
-}
+};
 
 module.exports = contentType;
