@@ -42,13 +42,13 @@ body {
     border-bottom: 3px solid #000;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
 }
 
 .site-title a {
     font-family: 'Ma Shan Zheng', monospace;
     text-decoration: none;
-    font-size: 2.3rem;
+    font-size: 3.0rem;
     color: black;
 }
 
@@ -79,6 +79,6 @@ body {
 }
 
 .site-main {
-    width: 90%;
+    width: 80%;
     height: 100%;
 }

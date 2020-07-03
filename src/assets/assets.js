@@ -15,7 +15,6 @@ const sendError = (message, code, res) => {
 };
 
 module.exports = async function (req, res) {
-    console.log('req.url -->>', req.url);
     const filePath = path.join(__dirname, "..", req.url);
     if (files[filePath]) {
         serve(files[filePath], res);
